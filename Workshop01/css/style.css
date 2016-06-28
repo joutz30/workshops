@@ -1,0 +1,280 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+}
+h1,h2,h3,h4,h5,a{
+	font-family: 'Montserrat', sans-serif;
+}
+.contenedor{
+	max-width: 900px;
+	margin: auto;
+}
+nav{
+	background-color: #2A3E50;
+	padding: 20px 0;
+	overflow: auto;
+}
+nav h1{
+	color: white;
+	font-size: 25px;
+	font-weight: 700;
+	text-transform: uppercase;
+	float: left;
+}
+nav ul{
+	float: right;
+}
+nav ul li{
+	display: inline-block;
+	margin:0 10px;
+}
+nav ul li a{
+	color: white;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color:#00BD9D;
+}
+@media screen and (max-width: 700px){
+	nav{
+		text-align: center;
+	}
+	nav h1{
+		float: none;
+	}
+	nav ul{
+		float: none;
+		margin-top: 20px;
+	}
+	nav ul li a{
+		font-size: 15px;
+	}
+}
+header{
+	background-color: #00BD9D;
+	text-align: center;
+	padding: 100px 0;
+}
+header h2{
+	color: white;
+	font-size: 40px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+header h6{
+	color: white;
+	font-size: 20px;
+}
+.contenedor-estrella{
+	margin: 15px 0;
+}
+.contenedor-estrella .estrella{
+	color: white;
+	font-size: 30px;
+}
+.contenedor-estrella .linea:after,
+.contenedor-estrella .linea:before{
+	content: "";
+	width: 100px;
+	height: 3px;
+	background-color: white;
+	display: inline-block;
+	position: relative;
+	top: -10px;
+}
+#portfolio {
+	text-align: center;
+	padding: 100px 0;
+}
+#portfolio h2{
+	color: #2A3E50;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: 700;
+}
+#portfolio .contenedor-estrella .estrella{
+	color: #2A3E50;
+}
+#portfolio .contenedor-estrella .linea:after,
+#portfolio .contenedor-estrella .linea:before{
+	background-color:#2A3E50;
+}
+.galeria li{
+	display: inline-block;
+	width: 30%;
+	padding: 10px;
+}
+.galeria li article{
+	display: inline-block;
+	position: relative;
+}
+.galeria li article img{
+	width: 100%;
+}
+.galeria .sobre{
+	position: absolute;
+	background-color: #00BD9D;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: 1s;
+}
+.galeria .sobre span{
+	font-size: 80px;
+	color: white;
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+
+}
+.galeria .sobre:hover{
+	opacity: 0.9;
+}
+@media screen and (max-width: 780px){
+	.galeria li{
+		width: 100%;
+	}
+}
+#about{
+	text-align: center;
+	background-color: #00BD9D;
+	padding: 100px 0;
+}
+#about h2{
+	color: white;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: 700;
+}
+#about .parrafo1,
+#about .parrafo2{
+	color: white;
+	max-width: 40%;
+	text-align: left;
+	font-size: 15px;
+	display: inline-block;
+	line-height: 1.5;
+	padding: 0 20px;
+}
+@media screen and (max-width: 700px){
+	#about .parrafo1{
+		max-width:100%;
+	}
+	#about .parrafo2{
+		display: none;
+	}
+}
+#contact{
+	text-align: center;
+	padding: 100px 0;
+	overflow: auto;
+}
+#contact h2{
+	color: #2A3E50;
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: 700;
+}
+#contact .contenedor-estrella .estrella{
+	color: #2A3E50;
+}
+#contact .contenedor-estrella .linea:after,
+#contact .contenedor-estrella .linea:before{
+	background-color:#2A3E50;
+}
+#contact form input{
+	width: 85%;
+	height: 50px;
+	border:none;
+	border-top: 1px solid #ccc;
+	font-size: 16px;
+}
+#contact form textarea{
+	width: 85%;
+	height: 150px;
+	border: none;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	resize: none;
+	font-size: 16px;
+}
+#contact form .enviar{
+	width: 80px;
+	border-radius: 5%;
+	background-color: #00BD9D;
+	color: white;
+	font-size: 16px;
+	float: left;
+	position: relative;
+	left:80px;
+	top: 20px;
+}
+@media screen and (max-width: 700px){
+	#contact form .enviar{
+		float: none;
+		left: 0;
+		top: 20px;
+	}
+}
+footer{
+	background-color: #2A3E50;
+}
+footer .contenedor{
+	padding: 50px 0;
+}
+.social li{
+	display: inline-block;
+}
+.social li span{
+	color: white;
+	font-size: 25px;
+	border: 1px solid white;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	border-radius: 50%;
+	text-align: center;
+	padding-top: 6px;
+    box-sizing: border-box;
+    margin: 0 4px;
+}
+footer article{
+	text-align: center;
+	display: inline-block;
+	margin: 0 50px;
+}
+footer article h3{
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	padding-bottom: 20px;
+}
+footer article p{
+	color: white;
+	font-size: 16px;
+}
+footer .copy{
+	background-color: #213140;
+	text-align: center;
+	padding: 20px 0;
+	color: white;
+	font-size: 14px;
+}
+@media screen and (max-width: 650px){
+	.social li span{
+		width: 25px;
+		height: 25px;
+		font-size: 15px;
+		padding-top: 4px;
+	}
+	footer article{
+		display: block;
+		margin: 0 0 30px 0;
+	}
+		
+}
