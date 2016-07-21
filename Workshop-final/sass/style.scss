@@ -1,0 +1,136 @@
+@import "_reset";
+@import "_fuentes";
+@import url(http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+
+$color_pag:#31AAE2;
+$color_pag2:white;
+
+.contenedor{
+	max-width: 900px;
+	margin: auto;
+}
+.centrar{
+	position: absolute;
+	left: 50%;
+	top:50%;
+	transform: translate(-50%,-50%);
+}
+body{
+	font-family: $fuente_textos;
+}
+header{
+	background-image: url(../imagenes/header.jpg);
+	background-repeat:no-repeat;
+	background-size: cover;
+	height: 500px;
+	nav{
+		padding: 20px 0;
+		overflow: auto;
+		img{
+			float:left;
+		}
+		ul{
+			float: right;
+			li{
+				display: inline-block;
+				margin:20px 10px;
+				a{
+					color: $color_pag2;
+					font-size: 15px;
+					font-weight: bold;
+					text-transform: uppercase;
+					text-decoration: none;
+				}
+				a:hover{
+					color: $color_pag;
+				}
+			}
+		}
+		.busqueda{
+			margin-left: 50px;
+			li{
+				position: relative;
+				margin: 10px 10px;
+				border-radius: 50%;
+				width: 30px;
+				height:30px;
+				span{
+					@extend .centrar;
+				}
+			}
+			.carrito{
+				background-color: $color_pag;
+				span{
+					color: $color_pag2;
+				}
+			}
+			.lupa{
+				background-color: $color_pag2;
+				span{
+					color: $color_pag;
+				}
+			}
+
+		}
+	}
+}
+
+.productos{
+	background-color: #cdcdcd;
+	.contenedor{
+		display: flex;
+	}
+} 
+.portfolio{
+	padding: 50px 0;
+	text-align: center;
+	.galeria{
+		li{
+			display: inline-block;
+			width: 30%;
+			padding: 10px;
+			article{
+				display: inline-block;
+				position: relative;
+				img{
+					width: 100%;
+				}
+				.sobre{
+					position: absolute;
+					background-color:#B6314A;
+					width: 100%;
+					height: 76%;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					transition: 1s;
+					span{
+						font-size: 80px;
+						color: $color_pag2;
+						@extend .centrar;
+					}
+				}
+				.sobre:hover{
+					opacity: 0.9;
+				}
+			}
+		}
+	}
+}
+.list{
+	background-color: #e05b7d;
+	text-align: center;
+	padding-top: 50px;
+}
+.carrusel{
+	padding: 50px 0;
+}
+.staff{
+	padding: 50px 0;
+}
+.girl{
+	background-color: #FED379;
+}
+.blog{
+	padding: 50px 0;
+}
